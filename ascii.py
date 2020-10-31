@@ -23,7 +23,6 @@ with open('art.txt','w') as f:
 def resize_image(img,size=150):
     w,h=img.size
     aspect_ratio=h/w
-    print(size)
     img=img.resize((size,int(aspect_ratio*size*0.55)))
     return img
 
